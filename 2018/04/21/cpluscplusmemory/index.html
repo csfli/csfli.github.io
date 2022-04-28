@@ -82,16 +82,16 @@
 <meta name="description" content="详解C/C++的内存布局，以及C++对象内存布局，以及C和C++内存布局之间有什么区别。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C&#x2F;C++内存布局策略详解">
-<meta property="og:url" content="http://harlon.org/2018/04/21/cpluscplusmemory/index.html">
+<meta property="og:url" content="http://csfli.github.io/2018/04/21/cpluscplusmemory/index.html">
 <meta property="og:site_name" content="Harlon&#39;s BLOG">
 <meta property="og:description" content="详解C/C++的内存布局，以及C++对象内存布局，以及C和C++内存布局之间有什么区别。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://harlon.org/img/c-memory.png">
+<meta property="og:image" content="http://csfli.github.io/img/c-memory.png">
 <meta property="og:updated_time" content="2018-07-24T14:15:21.488Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C&#x2F;C++内存布局策略详解">
 <meta name="twitter:description" content="详解C/C++的内存布局，以及C++对象内存布局，以及C和C++内存布局之间有什么区别。">
-<meta name="twitter:image" content="http://harlon.org/img/c-memory.png">
+<meta name="twitter:image" content="http://csfli.github.io/img/c-memory.png">
 
 
 
@@ -121,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://harlon.org/2018/04/21/cpluscplusmemory/"/>
+  <link rel="canonical" href="http://csfli.github.io/2018/04/21/cpluscplusmemory/"/>
 
 
 
@@ -264,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://harlon.org/2018/04/21/cpluscplusmemory/">
+    <link itemprop="mainEntityOfPage" href="http://csfli.github.io/2018/04/21/cpluscplusmemory/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Harlon">
@@ -383,7 +383,7 @@
 <li>常量存储区：这部分存储的内容与C语言中初始化数据段中的只读数据段是一样的，用来存储C++常量；</li>
 <li>全局/静态存储区：在C++中，不再区分数据段和BSS段，未初始化和初始化的全局/静态变量都会存储在这里，并且初始化为0；</li>
 <li>堆：堆又分为new分配的存储区和malloc分配的内存块，new分配的存储区会在程序结束之后，系统会帮助我们清理；</li>
-<li>栈：栈和C程序的栈相同。<br>C和C++的内存布局大致上是相同的，主要区别在于C++引进了对象，C++对象中的成员函数存储在代码段中，数据成员才会存储在栈中，同样静态变量会存储在在全局/静态存储区，并且必须初始化。当然C++对象内存布局会涉及到继承，多态而出现多种变化，以及内存对齐的影响，对于这部分的内容参考：<br><a href="http://harlon.org/2018/04/05/cpluscplusmemorypack/">内存对齐策略</a><br><a href="http://harlon.org/2018/03/26/cpluscplusinheritance/">C++之继承</a><br><a href="http://harlon.org/2018/04/13/cpluscpluspolymorphism/">C++之多态</a></li>
+<li>栈：栈和C程序的栈相同。<br>C和C++的内存布局大致上是相同的，主要区别在于C++引进了对象，C++对象中的成员函数存储在代码段中，数据成员才会存储在栈中，同样静态变量会存储在在全局/静态存储区，并且必须初始化。当然C++对象内存布局会涉及到继承，多态而出现多种变化，以及内存对齐的影响，对于这部分的内容参考：<br><a href="http://csfli.github.io/2018/04/05/cpluscplusmemorypack/">内存对齐策略</a><br><a href="http://csfli.github.io/2018/03/26/cpluscplusinheritance/">C++之继承</a><br><a href="http://csfli.github.io/2018/04/13/cpluscpluspolymorphism/">C++之多态</a></li>
 </ul>
 <hr>
 <blockquote>
